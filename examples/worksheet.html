@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>概率练习纸</title>
+<style>
+
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            padding: 24px 12px;
+            background: #eef2f7;
+            color: #1f2937;
+            font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+            line-height: 1.7;
+        }
+        .sheet {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 18mm 16mm;
+            background: #ffffff;
+            box-shadow: 0 12px 32px rgba(15, 23, 42, 0.14);
+        }
+        .paper-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            gap: 16px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #1f2937;
+        }
+        h1 { margin: 0; font-size: 24px; letter-spacing: 1px; }
+        .brand { font-size: 12px; color: #6b7280; white-space: nowrap; }
+        .meta { margin: 10px 0 18px; color: #4b5563; font-size: 14px; }
+        .questions { margin: 0; padding: 0; list-style: none; }
+        .question-item {
+            padding: 14px 0 16px;
+            border-bottom: 1px dashed #cbd5e1;
+            break-inside: avoid;
+        }
+        .question { font-size: 16px; font-weight: 600; }
+        .number { color: #2563eb; margin-right: 6px; }
+        .options {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 6px 20px;
+            margin: 10px 0 0;
+            padding: 0;
+            list-style: none;
+            font-size: 15px;
+        }
+        .letter { color: #6b7280; margin-right: 4px; }
+        .workspace { margin-top: 12px; color: #94a3b8; font-size: 14px; }
+        .answer {
+            margin-top: 10px;
+            padding: 10px 12px;
+            background: #f0fdf4;
+            border-left: 4px solid #22c55e;
+            font-size: 14px;
+        }
+        .answer p { margin: 2px 0; }
+        .empty { padding: 28px 0; color: #6b7280; text-align: center; }
+        .paper-foot {
+            margin-top: 22px;
+            padding-top: 10px;
+            border-top: 1px solid #e5e7eb;
+            color: #9ca3af;
+            font-size: 12px;
+            display: flex;
+            justify-content: space-between;
+        }
+        @media print {
+            body { padding: 0; background: #ffffff; }
+            .sheet { width: auto; min-height: auto; padding: 0; box-shadow: none; }
+        }
+        @page { size: A4; margin: 14mm; }
+        
+</style>
+</head>
+<body>
+<main class="sheet">
+<header class="paper-head">
+<h1>概率练习纸</h1>
+<span class="brand">probability 概率练习</span>
+</header>
+<p class="meta">姓名：____________　班级：____________　日期：____________</p>
+<ol class="questions">
+<li class="question-item">
+<div class="question"><span class="number">1.</span>同时掷两枚均匀的六面骰子，点数之和为 12 的概率是多少？</div>
+<ul class="options">
+<li><span class="letter">A.</span>1/18（5.56%）</li>
+<li><span class="letter">B.</span>1/36（2.78%）</li>
+<li><span class="letter">C.</span>0（0%）</li>
+<li><span class="letter">D.</span>1/12（8.33%）</li>
+</ul>
+<div class="answer">
+<p><strong>答案：</strong>1/36（2.78%）</p>
+<p><strong>解析：</strong>两枚骰子共有 36 种等可能结果，点数之和为 12 的有 1 种。</p>
+</div>
+</li>
+<li class="question-item">
+<div class="question"><span class="number">2.</span>袋中有红 1 个、绿 2 个、黄 4 个球，大小质地相同。随机摸出一个球，摸到绿球的概率是多少？</div>
+<ul class="options">
+<li><span class="letter">A.</span>1/8（12.5%）</li>
+<li><span class="letter">B.</span>3/4（75%）</li>
+<li><span class="letter">C.</span>2/7（28.57%）</li>
+<li><span class="letter">D.</span>2/3（66.67%）</li>
+</ul>
+<div class="answer">
+<p><strong>答案：</strong>2/7（28.57%）</p>
+<p><strong>解析：</strong>袋中共有 7 个球，其中绿球 2 个，所以概率是 2/7。</p>
+</div>
+</li>
+<li class="question-item">
+<div class="question"><span class="number">3.</span>掷一枚均匀的六面骰子，点数满足「大于4」的概率是多少？</div>
+<ul class="options">
+<li><span class="letter">A.</span>5/36（13.89%）</li>
+<li><span class="letter">B.</span>1（100%）</li>
+<li><span class="letter">C.</span>1/3（33.33%）</li>
+<li><span class="letter">D.</span>5/12（41.67%）</li>
+</ul>
+<div class="answer">
+<p><strong>答案：</strong>1/3（33.33%）</p>
+<p><strong>解析：</strong>六面骰子共有 6 种等可能结果，满足条件的有 2 种。</p>
+</div>
+</li>
+<li class="question-item">
+<div class="question"><span class="number">4.</span>抛一枚均匀硬币，正面朝上的概率是多少？</div>
+<ul class="options">
+<li><span class="letter">A.</span>2/3（66.67%）</li>
+<li><span class="letter">B.</span>1（100%）</li>
+<li><span class="letter">C.</span>1/2（50%）</li>
+<li><span class="letter">D.</span>1/12（8.33%）</li>
+</ul>
+<div class="answer">
+<p><strong>答案：</strong>1/2（50%）</p>
+<p><strong>解析：</strong>硬币只有正、反两种等可能结果，符合条件的只有 1 种，所以概率是 1/2。</p>
+</div>
+</li>
+<li class="question-item">
+<div class="question"><span class="number">5.</span>袋中有蓝 2 个、绿 2 个、红 4 个球，大小质地相同。随机摸出一个球，摸到绿球的概率是多少？</div>
+<ul class="options">
+<li><span class="letter">A.</span>1/8（12.5%）</li>
+<li><span class="letter">B.</span>1/6（16.67%）</li>
+<li><span class="letter">C.</span>1/4（25%）</li>
+<li><span class="letter">D.</span>0（0%）</li>
+</ul>
+<div class="answer">
+<p><strong>答案：</strong>1/4（25%）</p>
+<p><strong>解析：</strong>袋中共有 8 个球，其中绿球 2 个，所以概率是 2/8。</p>
+</div>
+</li>
+<li class="question-item">
+<div class="question"><span class="number">6.</span>同时掷两枚均匀的六面骰子，点数之和为 3 的概率是多少？</div>
+<ul class="options">
+<li><span class="letter">A.</span>5/12（41.67%）</li>
+<li><span class="letter">B.</span>1/6（16.67%）</li>
+<li><span class="letter">C.</span>1/8（12.5%）</li>
+<li><span class="letter">D.</span>1/18（5.56%）</li>
+</ul>
+<div class="answer">
+<p><strong>答案：</strong>1/18（5.56%）</p>
+<p><strong>解析：</strong>两枚骰子共有 36 种等可能结果，点数之和为 3 的有 2 种。</p>
+</div>
+</li>
+<li class="question-item">
+<div class="question"><span class="number">7.</span>掷一枚均匀的六面骰子，点数满足「奇数」的概率是多少？</div>
+<ul class="options">
+<li><span class="letter">A.</span>1/2（50%）</li>
+<li><span class="letter">B.</span>1/9（11.11%）</li>
+<li><span class="letter">C.</span>1/8（12.5%）</li>
+<li><span class="letter">D.</span>1（100%）</li>
+</ul>
+<div class="answer">
+<p><strong>答案：</strong>1/2（50%）</p>
+<p><strong>解析：</strong>六面骰子共有 6 种等可能结果，满足条件的有 3 种。</p>
+</div>
+</li>
+<li class="question-item">
+<div class="question"><span class="number">8.</span>抛一枚均匀硬币，正面朝上的概率是多少？</div>
+<ul class="options">
+<li><span class="letter">A.</span>1（100%）</li>
+<li><span class="letter">B.</span>7/12（58.33%）</li>
+<li><span class="letter">C.</span>1/2（50%）</li>
+<li><span class="letter">D.</span>5/36（13.89%）</li>
+</ul>
+<div class="answer">
+<p><strong>答案：</strong>1/2（50%）</p>
+<p><strong>解析：</strong>硬币只有正、反两种等可能结果，符合条件的只有 1 种，所以概率是 1/2。</p>
+</div>
+</li>
+<li class="question-item">
+<div class="question"><span class="number">9.</span>转盘被等分为 4 个面积相同的扇区，编号依次为 3,4,1,4。指针停在编号 1 的概率是多少？</div>
+<ul class="options">
+<li><span class="letter">A.</span>1/6（16.67%）</li>
+<li><span class="letter">B.</span>5/12（41.67%）</li>
+<li><span class="letter">C.</span>1/4（25%）</li>
+<li><span class="letter">D.</span>0（0%）</li>
+</ul>
+<div class="answer">
+<p><strong>答案：</strong>1/4（25%）</p>
+<p><strong>解析：</strong>转盘共有 4 个等面积扇区，编号 1 出现了 1 次，所以概率是 1/4。</p>
+</div>
+</li>
+<li class="question-item">
+<div class="question"><span class="number">10.</span>转盘被等分为 6 个面积相同的扇区，编号依次为 2,1,2,4,3,3。指针停在编号 3 的概率是多少？</div>
+<ul class="options">
+<li><span class="letter">A.</span>5/36（13.89%）</li>
+<li><span class="letter">B.</span>1/9（11.11%）</li>
+<li><span class="letter">C.</span>2/3（66.67%）</li>
+<li><span class="letter">D.</span>1/3（33.33%）</li>
+</ul>
+<div class="answer">
+<p><strong>答案：</strong>1/3（33.33%）</p>
+<p><strong>解析：</strong>转盘共有 6 个等面积扇区，编号 3 出现了 2 次，所以概率是 2/6。</p>
+</div>
+</li>
+</ol>
+<footer class="paper-foot">
+<span>probability · 简单概率与随机实验</span>
+<span>共 10 题（含答案）</span>
+</footer>
+</main>
+</body>
+</html>
